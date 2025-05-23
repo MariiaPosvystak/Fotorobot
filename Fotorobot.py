@@ -13,9 +13,10 @@ def salvesta_nägu():
     if not failinimi:
         return
     lõpp_pilt = Image.new("RGBA", (400, 400), (255, 255, 255, 255))
-    for nimi in ["nägu","otsmik", "silmad", "nina", "suu"]:
+    for nimi in ["nägu","otsmik", "silmad", "nina", "suu","hair"]:
         if olemas.get(nimi):
             failitee={
+                "hair":"LHair.png",
                 "nägu":"Nägu.png",
                 "otsmik": "LOtsmik.png",
                 "silmad":"LSilmad.png",
@@ -69,7 +70,7 @@ app.title("Näo koostaja nuppudega")
 canvas=Canvas(app,width=400,height=400,bg="white")
 canvas.pack(side="right", padx=10, pady=10)
 
-toggle_osa("nägu", "alus.png", 200, 200)
+toggle_osa("nägu", "Nägu.png", 200, 200)
 olemas["nägu"]=True
 
 frame = ctk.CTkFrame(app)
@@ -85,6 +86,7 @@ ctk.CTkButton(frame, text="Otsmik", command=lambda: toggle_osa("otsmik", "LOtsmi
 ctk.CTkButton(frame, text="Silmad", command=lambda: toggle_osa("silmad", "LSilmad.png", 200, 200), **seaded).pack(pady=5)
 ctk.CTkButton(frame, text="Nina", command=lambda: toggle_osa("nina", "LNina.png", 200, 200), **seaded).pack(pady=5)
 ctk.CTkButton(frame, text="Suu", command=lambda: toggle_osa("suu", "LSuu.png", 200, 200), **seaded).pack(pady=5)
+ctk.CTkButton(frame, text="Hair", command=lambda: toggle_osa("hair", "LHair.png", 200, 200), **seaded).pack(pady=5)
 # ctk.CTkButton(frame, text="Otsmik", command=lambda: toggle_osa("otmik, LOtsmik.png",200,200) ,**seaded).pack(pady=5)
 # ctk.CTkButton(frame, text="Silmad", command=lambda: toggle_osa("silmad, LSilmad.png",200,200) ,**seaded).pack(pady=5)
 # ctk.CTkButton(frame, text="Nina", command=lambda: toggle_osa("nina, LNina.png",200,200) ,**seaded).pack(pady=5)

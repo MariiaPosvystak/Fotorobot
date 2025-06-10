@@ -24,21 +24,30 @@
     <Compile Include="Fotorobot.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cat.png" />
     <Content Include="fail.txt" />
-    <Content Include="LHair.png" />
-    <Content Include="LKõrvad.png" />
-    <Content Include="LNina.png" />
-    <Content Include="LOtsmik.png" />
-    <Content Include="LSilmad.png" />
-    <Content Include="LSuu.png" />
-    <Content Include="Nägu.png" />
-    <Content Include="ZHair.png" />
-    <Content Include="ZKõrvad.png" />
-    <Content Include="ZNina.png" />
-    <Content Include="ZOtsmik.png" />
-    <Content Include="ZSilmad.png" />
-    <Content Include="ZSuu.png" />
+    <Content Include="juuksed_1.png" />
+    <Content Include="juuksed_2.png" />
+    <Content Include="juuksed_3.png" />
+    <Content Include="juuksed_4.png" />
+    <Content Include="kulmud_1.png" />
+    <Content Include="kulmud_2.png" />
+    <Content Include="kulmud_3.png" />
+    <Content Include="nina_1.png" />
+    <Content Include="nina_2.png" />
+    <Content Include="nina_4.png" />
+    <Content Include="nina_3.png" />
+    <Content Include="nägu_1.png" />
+    <Content Include="nägu_2.png" />
+    <Content Include="nägu_3.png" />
+    <Content Include="silmad_1.png" />
+    <Content Include="silmad_2.png" />
+    <Content Include="silmad_3.png" />
+    <Content Include="silmad_4.png" />
+    <Content Include="silmad_5.png" />
+    <Content Include="suu_1.png" />
+    <Content Include="suu_2.png" />
+    <Content Include="suu_3.png" />
+    <Content Include="suu_4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
